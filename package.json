@@ -1,0 +1,17 @@
+{
+  "name": "js-3",
+  "version": "1.0.0",
+  "description": "Book Store API project for Node.js hands-on lab",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node server.js"
+  },
+  "author": "Suyash Gour",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  }
+}

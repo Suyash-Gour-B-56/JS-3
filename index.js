@@ -1,0 +1,11 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+app.use(bodyParser.json());
+let books = require("./booksdb.js");
+let general_routes = require("./routes/general.js").general;
+let user_routes = require("./routes/auth_users.js").authenticated;
+app.use("/", general_routes);
+app.use("/customer", user_routes);
+const PORT = 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
